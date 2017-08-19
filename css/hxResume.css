@@ -71,6 +71,14 @@ body {
   font-size: 32px;
   font-weight: 400;
 }
+#home .container h2 a {
+  font-size: 23px;
+  color: #bbb;
+  text-decoration: none;
+}
+#home .container h2 a:hover {
+  color: #00CCCB;
+}
 #home .container .header-img {
   width: 100%;
   text-align: center;
