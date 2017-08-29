@@ -16,7 +16,6 @@ $(document).ready(function () {
             $('#main-nav').addClass('scrolled');
         }
     });
-
     //滚动监听触发动画事件
     $(window).load(function () {
         $('.scrollimation').waypoint(function () {
@@ -24,7 +23,6 @@ $(document).ready(function () {
         }, {offset: '95%'});
 
     });
-
     $('#skills').waypoint(function () {
         $('.chart').each(function () {
             $(this).easyPieChart({
@@ -50,12 +48,10 @@ $(document).ready(function () {
             }
         );
         var $navbarCollapse = $('.navbar-collapse');
-
         if ($navbarCollapse.hasClass('in')) {
             $navbarCollapse.removeClass('in');
         }
     });
-
     setTimeout(function () {
         var $container = $('#projects-container');
         $container.masonry({
@@ -64,19 +60,6 @@ $(document).ready(function () {
         });
     }, 1000);
 
-
-    // $(function () {
-    //     var $container = $('#projects-container');
-    //     $container.masonry({
-    //         itemSelector: '.project-item',
-    //         isAnimated: true
-    //     });
-    // });
-    // function scrollSpyRefresh() {
-    //     setTimeout(function () {
-    //         $('body').scrollspy('refresh');
-    //     }, 1000);
-    // }
 
 });
 
